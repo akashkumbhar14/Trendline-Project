@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0.1px 0.1px;
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* background-color: blueviolet; */
+  font-family: 'Gilroy';
+}
+
+#nav1{
+    height: 50px;
+    width: 100%;
+    /* background-color: aliceblue; */
+display: flex;    
+align-items: center;
+justify-content: space-between;
+padding: 0px 30px;
+}
+#circle{
+    display: flex;
+    gap: 2px;
+}
+#circle1{
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    border-radius: 50%;
+}
+#circle2{
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    border-radius: 50%;
+}
+#content{
+    font-size: 12px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#content :nth-child(2)
+{
+    color: rgba(148, 77, 11, 0.87);
+}
+
+#content h3{
+    font-weight: 500;
+}
+#nav2{
+    padding-left: 30px;
+    /* background-color: red; */
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    gap:60px
+}
+#nav2 h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+}
+#scroll{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: calc(100% - 100px);
+}
+#text{
+    height:40%;
+    width: 100%;
+    /* background-color: rgb(185, 154, 112); */
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+#text::-webkit-scrollbar{
+    /* display: none; */
+    background-color: transparent;
+    height: 5px;
+}
+#text::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    height:100%;
+    width: 55vw;
+    /* background-color: red; */
+    border-right: 2px solid black;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elem h1{
+    font-family: 'Gilroy';
+    font-size: 7vw;
+    font-weight: 10;
+}
+#images{
+    height:60%;
+    width: 100%;
+    background-color: rgb(144, 166, 185);
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+#images::-webkit-scrollbar{
+    display: none;
+}
+
+#images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    /* object-position: top; */
+}
+
+#images img:nth-child(1){
+    object-position: top;
+}
+#images img:nth-child(2){
+    object-position: 0% 35%;
+}
+#images img:nth-child(3){
+    object-position: 0% 45%;
+}
+#images img:nth-child(4){
+    object-position: 0% 34%;
+}
+#images img:nth-child(5){
+    object-position: 0% 40%;
+}
